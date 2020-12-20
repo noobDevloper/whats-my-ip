@@ -4,7 +4,7 @@ const options = {
     host: 'www.google.com',
 };
 const getIpAddress = () => {
-    return new Promise((resolve, rej) => {
+    return new Promise((resolve, rejects) => {
         const req = http.get(options);
         req.end();
         req.once('response', (res) => {
